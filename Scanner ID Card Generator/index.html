@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Geeky_arnav</title>
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="main.css">
+    <!-- QRCODE JS -->
+    <script src="/qrcode.min.js"></script>
+    <!-- QR Generator JS -->
+    <script src="./qr.js"></script>
+    <!-- ID CARD Generator JS -->
+    <script src="./generator.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+          <div class="col">
+            <h3 id="mainheading">ID CARD GENERATOR</h3>
+            <label>Full Name</label><br>
+            <input type="text" id="name" placeholder="Full Name">
+             <br>
+            <label>Mobile No.</label>
+            <br>
+            <input type="number" id="mobile" placeholder="Mobile No."><br>
+            <label>State</label><br>
+            <input type="text" id="state" placeholder="State">
+            <br>
+            <label>Blood Group</label><br>
+            <input type="text" id="blood" placeholder="Blood Group">
+            <br>
+            <label>LINK</label><br>
+            <input type="text" id="qr-data" placeholder="QR Code "><br><br>
+            <button type="button" class="btn btn-danger" onclick="generatorQR()">QR Code</button>&nbsp;&nbsp
+            <button type="button" class="btn btn-warning" onclick="generator()">ID Card</button>
+                        
+          </div>
+        
+          <div class="col">
+
+            <div class="card text-white bg-info mb-3" style="max-width: 18rem;">
+            
+            <div class="card-header">ID SCANNER CARD</div>
+            
+            <div class="card-body">
+            <h5 class="card-title"><p id="res_name"></p></h5>
+            <h5 class="card-title"><p id="res_mob"></p></h5>
+            <h5 class="card-title"><p id="res_state"></p></h5>
+            <h5 class="card-title"><p id="res_blood"></p></h5>
+    
+            <p class="card-text"><p id="qrcode"></p></p>
+        </div>
+        </div>
+        </div>
+    </div>
+</body>
+</html>

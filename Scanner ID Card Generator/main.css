@@ -1,0 +1,14 @@
+body{
+    margin-top:30px;
+    margin-left:30px;
+    padding:20px;
+    background-color: azure;
+    justify-content: center;
+    align-items: center;
+  
+}
+#mainheading{
+    
+    color:red;
+   
+}
